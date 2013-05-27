@@ -89,10 +89,6 @@ a { outline: none; }
 
   overflow: hidden;
 
-  &:hover {
-    & > .tile_text { top: 0px; }
-    & > .tile_footer { bottom: 0px; }
-  }
 
   &.tile_long {
     height: 610px;
@@ -102,13 +98,18 @@ a { outline: none; }
       top: -540px;
     }
 
-    &:hover {
+    .tiles_container.can_hover > &:hover {
       & > .tile_text { top: 0px; }
     }
   }
 
 
   &.tapped {
+    & > .tile_text { top: 0px; }
+    & > .tile_footer { bottom: 0px; }
+  }
+
+  .tiles_container.can_hover > &:hover {
     & > .tile_text { top: 0px; }
     & > .tile_footer { bottom: 0px; }
   }

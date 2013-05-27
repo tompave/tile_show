@@ -169,36 +169,36 @@ a {
   overflow: hidden;
 }
 /* line 93, ../sass/tiles.scss */
-.tile:hover > .tile_text {
-  top: 0px;
-}
-/* line 94, ../sass/tiles.scss */
-.tile:hover > .tile_footer {
-  bottom: 0px;
-}
-/* line 97, ../sass/tiles.scss */
 .tile.tile_long {
   height: 610px;
 }
-/* line 100, ../sass/tiles.scss */
+/* line 96, ../sass/tiles.scss */
 .tile.tile_long > .tile_text {
   height: 540px;
   top: -540px;
 }
-/* line 106, ../sass/tiles.scss */
-.tile.tile_long:hover > .tile_text {
+/* line 102, ../sass/tiles.scss */
+.tiles_container.can_hover > .tile.tile_long:hover > .tile_text {
   top: 0px;
 }
-/* line 112, ../sass/tiles.scss */
+/* line 108, ../sass/tiles.scss */
 .tile.tapped > .tile_text {
   top: 0px;
 }
-/* line 113, ../sass/tiles.scss */
+/* line 109, ../sass/tiles.scss */
 .tile.tapped > .tile_footer {
   bottom: 0px;
 }
+/* line 113, ../sass/tiles.scss */
+.tiles_container.can_hover > .tile:hover > .tile_text {
+  top: 0px;
+}
+/* line 114, ../sass/tiles.scss */
+.tiles_container.can_hover > .tile:hover > .tile_footer {
+  bottom: 0px;
+}
 
-/* line 124, ../sass/tiles.scss */
+/* line 125, ../sass/tiles.scss */
 .tile_text {
   -webkit-transition: top 0.5s;
   -moz-transition: top 0.5s;
@@ -211,7 +211,7 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px 12px 10px;
 }
-/* line 136, ../sass/tiles.scss */
+/* line 137, ../sass/tiles.scss */
 .tile_text > a {
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
@@ -220,12 +220,12 @@ a {
   color: #00c3ff;
   text-decoration: none;
 }
-/* line 140, ../sass/tiles.scss */
+/* line 141, ../sass/tiles.scss */
 .tile_text > a:hover {
   color: #ffc200;
 }
 
-/* line 145, ../sass/tiles.scss */
+/* line 146, ../sass/tiles.scss */
 .tile_footer {
   -webkit-transition: bottom 0.5s;
   -moz-transition: bottom 0.5s;
@@ -238,13 +238,13 @@ a {
   background-color: rgba(0, 0, 0, 0.85);
   padding: 12px;
 }
-/* line 157, ../sass/tiles.scss */
+/* line 158, ../sass/tiles.scss */
 .tile_footer > .tile_title {
   font-weight: bold;
   font-size: 19px;
   margin-bottom: 12px;
 }
-/* line 165, ../sass/tiles.scss */
+/* line 166, ../sass/tiles.scss */
 .tile_footer > .tile_title > a, .tile_footer > .tile_subtitle > a {
   position: relative;
   -webkit-transition: color 0.3s;
@@ -254,59 +254,59 @@ a {
   color: white;
   text-decoration: none;
 }
-/* line 170, ../sass/tiles.scss */
+/* line 171, ../sass/tiles.scss */
 .tile_footer > .tile_title > a:hover, .tile_footer > .tile_subtitle > a:hover {
   color: #ffc200;
 }
 
-/* line 180, ../sass/tiles.scss */
+/* line 181, ../sass/tiles.scss */
 #scorched_earth {
   background-image: url("../pics/scorched_earth_long.jpg");
 }
 
-/* line 181, ../sass/tiles.scss */
+/* line 182, ../sass/tiles.scss */
 #goddess_rebirth {
   background-image: url("../pics/goddess_rebirth_long.jpg");
 }
 
-/* line 182, ../sass/tiles.scss */
+/* line 183, ../sass/tiles.scss */
 #cheesecake {
   background-image: url("../pics/cheesecake.jpg");
 }
 
-/* line 183, ../sass/tiles.scss */
+/* line 184, ../sass/tiles.scss */
 #china_mountains {
   background-image: url("../pics/china_mountains.jpg");
 }
 
-/* line 184, ../sass/tiles.scss */
+/* line 185, ../sass/tiles.scss */
 #here_be_dragons {
   background-image: url("../pics/here_be_dragons_long.jpg");
 }
 
-/* line 185, ../sass/tiles.scss */
+/* line 186, ../sass/tiles.scss */
 #boxing_spider {
   background-image: url("../pics/boxing_spider.jpg");
 }
 
-/* line 186, ../sass/tiles.scss */
+/* line 187, ../sass/tiles.scss */
 #castle_village {
   background-image: url("../pics/castle_village.jpg");
 }
 
-/* line 187, ../sass/tiles.scss */
+/* line 188, ../sass/tiles.scss */
 #thousand_islands {
   background-image: url("../pics/thousand_islands.jpg");
 }
 
-/* line 189, ../sass/tiles.scss */
+/* line 190, ../sass/tiles.scss */
 .masonry {
   -webkit-transition: height 0.5s, width 0.5s;
   -moz-transition: height 0.5s, width 0.5s;
   -o-transition: height 0.5s, width 0.5s;
   transition: height 0.5s, width 0.5s;
 }
-/* line 191, ../sass/tiles.scss */
+/* line 192, ../sass/tiles.scss */
 .masonry > .masonry-brick {
   -webkit-transition: left 0.5s, right 0.5s, top 0.5s;
   -moz-transition: left 0.5s, right 0.5s, top 0.5s;
