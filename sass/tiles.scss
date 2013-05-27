@@ -14,28 +14,15 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: $gray_a;
   font-size: 16px;
   margin: 0;
 }
 
 a { outline: none; }
 
-#main {
-  @include box-sizing("border-box");
-  width: 100%;
-  //max-width: 950px;
-  //height: 1600px;
-  margin: 0 auto;
-  padding: 10px 0;
-  background-color: $white;
-}
-
-
-#header, #footer {
+#header {
   @include box-sizing("border-box");
   background-color: $cyan;
-  width: 930px;
   padding: 10px;
   margin: 0 auto;
   text-align: center;
@@ -43,16 +30,37 @@ a { outline: none; }
   font-weight: bold;
   color: $white;
 
-  @include border-radius(5px);
+  border-bottom: 1px solid darken($cyan, 10%);
+  @include box-shadow(0 0 5px 0 #777);
+  text-shadow: 0 -1px 0 #777;
+}
 
-  clear: both;
+
+
+#main {
+  @include box-sizing("border-box");
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#disclaimer {
+  @include box-sizing("border-box");
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+
+  color: #777;
+  @include border-radius(5px);
+  border: 1px solid $gray_b;
+  background-color: $gray_e;
+
+  & > p { margin-bottom: 5px; }
 }
 
 
 .tiles_container {
-  @include box-sizing("border-box");
-  @include box-shadow(inset 0 0 4px 0 rgba(0,0,0,0.5));
-  margin: 0 auto;
+  margin: 0 auto 80px;
 }
 
 
@@ -114,7 +122,14 @@ a { outline: none; }
 
   background-color: rgba(0,0,0,0.6);
   
-  padding: 10px;
+  padding: 20px 12px 10px;
+
+  & > a {
+    @include transition(color 0.3s);
+    color: $cyan;
+    text-decoration: none;
+    &:hover { color: $orange; }
+  }
 }
 
 
@@ -149,15 +164,6 @@ a { outline: none; }
 }
 
 
-.tile_link {
-  @include transition(color 0.3s);
-  color: $cyan;
-  text-decoration: none;
-  &:hover {
-    // text-decoration: underline;
-    color: $orange;
-  }
-}
 
 
 
