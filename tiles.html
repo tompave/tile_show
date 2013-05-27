@@ -2,9 +2,178 @@
 <html>
 <head>
     <title>Tiles</title>
-    <link href="/style/tiles.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="style/tiles.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="scripts/jquery.masonry.min.js"></script>
+    <script src="scripts/tiles.js"></script>
 </head>
 <body>
+    <div id="main">
+        <div id="header">
+            This in a header
+        </div>
 
+        <div class="tiles_container">
+            
+            <div id="world_is_mine" class="tile">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://alfred-georg.deviantart.com/art/the-world-is-mine-364487766">The world is mine</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://alfred-georg.deviantart.com/">alfred-georg</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="scorched_earth" class="tile tile_long">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://arcipello.deviantart.com/art/Scorched-earth-304068383">Scorched earth</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://arcipello.deviantart.com/">Daniel Conway</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="castle_village" class="tile">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://built4ever.deviantart.com/art/Castle-and-Village-Number-Two-334499398">Castle and Village</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://built4ever.deviantart.com/">Francois Beauregard</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cheesecake" class="tile">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://sasquat-ch.deviantart.com/art/No-Bake-Cherry-Cheesecake-280675437">No Bake Cherry Cheesecake</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://sasquat-ch.deviantart.com/">Pigamitha Dimar Marhadi Sony </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="here_be_dragons" class="tile tile_long">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://telthona.deviantart.com/art/Here-be-Dragons-Ph-Dragon-s-Nest-302475152">Here Be Dragons</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://telthona.deviantart.com/">Sandra Duchiewicz</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="boxing_spider" class="tile">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://angiwallace.deviantart.com/art/Boxing-Spider-172169128">Boxing Spider</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://richard-cd.deviantart.com/">C. Demetrius Richard</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="goddess_rebirth" class="tile tile_long">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://rahmatozz.deviantart.com/art/Goddess-of-Rebirth-211572270">Goddess of Rebirth</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://rahmatozz.deviantart.com/">Rahmatozz</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="thousand_islands" class="tile">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://erezmarom.deviantart.com/art/Land-of-a-Thousand-Islands-357073487">Land of a Thousand Islands</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://erezmarom.deviantart.com/">Erez Marom</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="china_mountains" class="tile">
+                <div class="tile_text">
+                    lorem ipsum dolor sic amet.
+                    <a class="tile_link" href="">link</a>
+                    la la lalala la la
+                </div>
+
+                <div class="tile_footer">
+                    <div class="tile_title">
+                        <a href="http://martanael.deviantart.com/art/China-Mountains-345041389">China Mountains</a>
+                    </div>
+                    <div class="tile_subtitle">
+                        by <a href="http://martanael.deviantart.com/">Marta de Andr&eacute;s</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            This in a footer
+        </div>
+    </div>
 </body>
 </html>
