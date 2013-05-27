@@ -4,4 +4,11 @@ $(document).ready(function(){
         columnWidth : 310,
         isFitWidth : true
     });
+
+    if(Modernizr.touch) {
+        $(".tile").click(function(event){
+            event.preventDefault();
+            $(this).toggleClass("tapped");
+        });
+    }
 });

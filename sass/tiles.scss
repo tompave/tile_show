@@ -89,13 +89,10 @@ a { outline: none; }
 
   overflow: hidden;
 
-
-  
   &:hover {
     & > .tile_text { top: 0px; }
     & > .tile_footer { bottom: 0px; }
   }
-
 
   &.tile_long {
     height: 610px;
@@ -109,7 +106,19 @@ a { outline: none; }
       & > .tile_text { top: 0px; }
     }
   }
+
+
+  &.tapped {
+    & > .tile_text { top: 0px; }
+    & > .tile_footer { bottom: 0px; }
+  }
 }
+
+
+
+
+// .tile_text.tapped { top: 0px; }
+// .tile_footer.tapped { bottom: 0px; }
 
 
 .tile_text {
@@ -167,7 +176,7 @@ a { outline: none; }
 
 
 
-#world_is_mine { background-image: url($world_is_mine_pic); }
+//# { background-image: url($); }
 #scorched_earth { background-image: url($scorched_earth_long_pic); }
 #goddess_rebirth { background-image: url($goddess_rebirth_long_pic); }
 #cheesecake { background-image: url($cheesecake_pic); }
