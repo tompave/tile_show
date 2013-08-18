@@ -3,7 +3,7 @@
 Simple implementation of a tile-based design.
 
 ##Live Demo
-There is a live demo, [link to be added].
+There is a [live demo](http://staticfiles.wonderingmachine.com/portfolio/tiles/tiles.html).
 
 ##We are dwarfs standing on the shoulders of giants
 

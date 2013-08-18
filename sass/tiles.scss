@@ -50,12 +50,21 @@ a { outline: none; }
   margin: 10px auto;
   padding: 10px;
 
-  color: #777;
-  @include border-radius(5px);
-  border: 1px solid $gray_b;
-  background-color: $gray_e;
+  color: #444;
+  // @include border-radius(3px);
+  // border: 1px solid $gray_b;
+  // background-color: #ccc;
 
-  & > p { margin-bottom: 5px; }
+  & > p {
+    margin-bottom: 10px;
+    text-align: center;
+
+    & > a {
+      color: $dark_orange;
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
 }
 
 
