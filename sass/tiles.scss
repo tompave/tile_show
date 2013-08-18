@@ -180,11 +180,15 @@ a { outline: none; }
 //# { background-image: url($); }
 #scorched_earth { background-image: url($scorched_earth_long_pic); }
 #goddess_rebirth { background-image: url($goddess_rebirth_long_pic); }
-#cheesecake { background-image: url($cheesecake_pic); }
+#bridges_island { background-image: url($bridges_island_long_pic); }
 #china_mountains { background-image: url($china_mountains_pic); }
-#boxing_spider { background-image: url($boxing_spider_pic); }
+
 #castle_village { background-image: url($castle_village_pic); }
 #thousand_islands { background-image: url($thousand_islands_pic); }
+
+#uluru_and_me { background-image: url($uluru_and_me_pic); }
+#infant_stars { background-image: url($infant_stars_pic); }
+#waterfall { background-image: url($waterfall_pic); }
 
 .masonry {
   @include transition(height 0.5s, width 0.5s);
